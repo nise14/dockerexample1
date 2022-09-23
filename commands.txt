@@ -1,0 +1,5 @@
+create image
+docker build -t primerapp:latest . -f "primerApp.dockerfile"
+
+create container
+docker run -p 3005:3000 primerapp:latest
